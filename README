@@ -50,7 +50,6 @@ and (re)compiling the source code.
 
 Patches Used 
 -------------
-- https://dwm.suckless.org/patches/focusonclick/dwm-focusonclick-20171030-6aa8e37.diff
 - https://dwm.suckless.org/patches/statuspadding/dwm-statuspadding-20150524-c8e9479.diff
 - https://dwm.suckless.org/patches/vanitygaps/dwm-vanitygaps-20200610-f09418b.diff
 - https://lists.suckless.org/dev/att-7590/shiftview.c
