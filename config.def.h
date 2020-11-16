@@ -14,8 +14,8 @@ static const int horizpadbar        = 5;        /* horizontal padding for status
 static const int vertpadbar         = 5;        /* vertical padding for statusbar */
 static const char *fonts[]          = { "Hack:size=10", "Material Design Icons:size=14", "Open Sans:Regular:size=10" };
 static const char dmenufont[]       = "Hack:size=10";
-static const char col_hl[]       = "#454545";
-static const char col_text[]       = "#eeeeee";
+static const char col_hl[]          = "#454545";
+static const char col_text[]        = "#eeeeee";
 static const char col_base[]        = "#202020";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
@@ -32,6 +32,7 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
+	NULL
 };
 
 /* layout(s) */
@@ -90,8 +91,8 @@ static Key keys[] = {
 	{ MODKEY,                       XK_period, focusmon,       {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
-	{ MODKEY,                       XK_Left,   shiftview,      {.i = -1 } },
-	{ MODKEY,                       XK_Right,  shiftview,      {.i = +1 } },
+	{ ControlMask,                  XK_Left,   shiftview,      {.i = -1 } },
+	{ ControlMask,                  XK_Right,  shiftview,      {.i = +1 } },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
